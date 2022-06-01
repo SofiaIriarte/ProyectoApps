@@ -1,0 +1,119 @@
+body{
+
+    background-color: #343a40;
+
+}
+
+.home{
+    background-color: 89A081;
+    font-family: 'Satisfy';
+
+}
+
+
+.btnGris{
+    font-family: 'Raleway';
+    background-color: 727C6C;
+}
+
+.ingresar{
+    font-family: 'Raleway';
+}
+
+input{
+    font-family: 'Raleway';
+    border-radius: 12px;
+}
+
+.inicioH{
+    background-image: url("bienvenido.jpg");
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+
+.h1{
+
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.btnRosa{
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: white;
+    background-color: #FF006C;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none;
+    
+   }
+
+   
+.btnRosa:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: #343a40;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+
+.btnTransp{
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #343a40;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: white;
+    background-color: #343a40;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none;
+
+   }
+   
+.btnTransp:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: #FF006C;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+
+.label{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+.selectRosa{
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: white;
+    background-color: #FF006C;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none;
+    height: 30px;
+    width: 100px ;
+}
+

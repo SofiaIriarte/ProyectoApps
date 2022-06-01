@@ -1,0 +1,154 @@
+<!DOCTYPE html class="center">
+
+<head>
+    <title>Estancia Turistica los Platanos</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="favicon.jpg" rel="shortcut icon">
+    <script url="https://api.movie.com.uy/api/shows/rss/data"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script href="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src= "https://code.jquery.com/jquery-3.5.1.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/aa71007377.js" crossorigin="anonymous"></script>
+</head>
+
+<body >
+
+
+    <!--HOME-->
+    <div class="home">
+        <img src="logo.png">
+        <h1 class="home">Bienvenido!</h1>
+        <button class="btnGris">Ingresar</button>
+        <button class="btnGris">Ver Sitio Web</button>
+        <button class="btnGris">Reservar</button>
+
+    </div>
+
+    <!--INGRESAR-->
+    <div class="ingresar">
+        <p class="ingresar">Ingresar</p>
+        <p class="ingresar">Nombre de usuario</p>
+        <input value="nombreDeUsuario">
+        <p class="ingresar">Contraseña</p>
+        <input value="contraseña">
+        <button class="btnGris">INGRESAR</button>
+        <p>Si no tienes un usuario puedes</p>
+        <button class="btnGris">CREAR UNO AQUI</button>
+
+    </div>
+
+    <!--REGISTRARSE-->
+    <div class="ingresar">
+        <img src="logo.png">
+        <p class="ingresar">Registrarse</p>
+        <p class="ingresar">Nombre de usuario</p>
+        <input value="nombreDeUsuario">
+        <p class="ingresar">Contraseña</p>
+        <input value="contraseña">
+        <p class="ingresar">Confirmar Contraseña</p>
+        <input value="confirmarContraseña">
+        <p class="ingresar">Habitación</p>
+        <select value="habitacion" @change="onChange">
+            <option disabled selected="selected" value="">Seleccione una habitación</option>
+            <option  v-for="habitacion in habitaciones" :key="cine" :value="habitacion">
+                {{ habitacion }}
+            </option>
+        </select>
+        <p class="ingresar">Fechas</p>
+        <input value="fechas" type="date">
+        <img src="calendar.png">
+        <button class="btnGris">REGISTRARME</button>
+
+    </div>
+
+    <div>
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-house"></i>
+        </header>
+
+        <!--INICIO HUESPED-->
+        <div>
+            <div class="inicioH">
+                <h1 class="home">Bienvenido!</h1>
+
+            </div>
+        </div>
+
+        <!--DIVERSION-->
+        <div>
+            <button class="btnGris">ACTIVIDADES</button>
+            <button class="btnGris">JUEGOS</button>
+        </div>
+
+        <!--RECORRER-->
+        <div>
+            <button class="btnGris">MAPA INTERACTIVO</button>
+            <button class="btnGris">SENDEROS AUTOGUIADOS</button>
+        </div>
+
+        <!--CHAT-->
+        <div>
+            <img src="chat">
+            <i class="fa-solid fa-keyboard"></i>
+        </div>
+
+        <!--PERFIL-->
+        <div>
+        </div>
+
+        <!--ACTIVIDADES-->
+        <div>
+        </div>
+
+        <!--JUEGOS-->
+        <div>
+        </div>
+
+        <!--MAPA INTERACTIVO-->
+        <div>
+        </div>
+
+        <!--SENDEROS AUTOGUIADOS-->
+        <div>
+        </div>
+
+        <!--AVISTAMIENTO DE COSAS-->
+        <div>
+        </div>
+
+        <!--PREGUNTAS Y RESPUESTAS-->
+        <div>
+        </div>
+        
+        <footer>
+            <button>
+                <i class="fa-solid fa-house"></i>
+                <p>Inicio</p>
+            </button>
+            <button>
+                <i class="fa-solid fa-face-laugh-beam"></i>
+                <p>Diversión</p>
+            </button>
+            <button>
+                <i class="fa-solid fa-person-hiking"></i>
+                <p>Recorrer</p>
+            </button>
+            <button>
+                <i class="fa-solid fa-comments"></i>
+                <p>Chat</p>
+            </button>
+            <button>
+                <i class="fa-solid fa-user"></i>
+                <p>Perfil</p>
+            </button>
+        </footer>
+    </div>
+</body>
